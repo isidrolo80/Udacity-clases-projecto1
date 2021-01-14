@@ -1,3 +1,7 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+</style>
+
 .container{
   display:grid;
   grid-template-columns: 100%;
@@ -11,10 +15,9 @@
   "ft";
   border: 2px solid yellow;
 }
-.box{
-    border: 1px solid red;
+  .box{
     background: #ffffff;
-    }
+  }
   .header{
     /* row start/column start/ row end/ column end */
     background-color: #34568B;
@@ -33,6 +36,8 @@
     grid-area: sd;
   }
   .content{
+    text-decoration: none;
+    color: black;
     grid-area: main;
   }
 
@@ -41,8 +46,14 @@
     color: white;
   }
 
+  a:visited { text-decoration: none; color:black; }
+
   #blog_list_image{
   height: 100px;
+  }
+
+  *{
+    font-family: 'Roboto', sans-serif;
   }
 
 /* If Screen Is Wide Enough */
@@ -55,7 +66,7 @@
       "hd hd hd hd hd hd hd hd"
       "sd main main main main main main main"
       "ft ft ft ft ft ft ft ft";
-      border: 2px solid red;
+      /*border: 2px solid red;*/
   }
 .header{
   padding: 20px;
@@ -79,10 +90,6 @@ li{
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Float four columns side by side */
@@ -112,7 +119,7 @@ body {
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .column {
     width: 100%;
     display: block;
