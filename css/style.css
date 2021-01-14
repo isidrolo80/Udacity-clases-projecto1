@@ -6,20 +6,17 @@
   display:grid;
   grid-template-columns: 100%;
   grid-template-rows: 250px 200px;
-  /* grid-template-columns: repeat(3, 1fr); */
-  /* Initially each element has its own row for small screens */
+  /* Each element has its own row for mobile devices */
   grid-template-areas: 
   "hd"
   "sd"
   "main"
   "ft";
-  border: 2px solid yellow;
 }
   .box{
     background: #ffffff;
   }
   .header{
-    /* row start/column start/ row end/ column end */
     background-color: #34568B;
     padding: 100px;
     font-size: 25px;
@@ -56,7 +53,7 @@
     font-family: 'Roboto', sans-serif;
   }
 
-/* If Screen Is Wide Enough */
+/* If the screen is 900px or longer  */
 @media(min-width:900px) {
 .container{
       display:grid;
@@ -83,16 +80,13 @@ li{
 
 
 
-
-
-
 /* CSS For Boxes  */
 
 * {
   box-sizing: border-box;
 }
 
-/* Float four columns side by side */
+/* Columns should go next or below to each other   */
 .column {
   float: left;
   width: 95%;
@@ -100,7 +94,7 @@ li{
   padding: 0 10px;
 }
 
-/* Remove extra left and right margins, due to padding in columns */
+/* remove extra margins */
 .row {margin: 0 0px;}
 
 /* Clear floats after the columns */
@@ -110,15 +104,15 @@ li{
   clear: both;
 }
 
-/* Style the counter cards */
+/* card effect */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
 }
 
-/* Responsive columns - one column layout (vertical) on small screens */
+/* Responsive columns */
 @media screen and (max-width: 900px) {
   .column {
     width: 100%;

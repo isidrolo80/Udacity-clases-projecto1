@@ -6,14 +6,13 @@
   display:grid;
   grid-template-columns: 100%;
   grid-template-rows: 250px 200px;
-  /* grid-template-columns: repeat(3, 1fr); */
-  /* Initially each element has its own row for small screens */
+  /* Each element has its own row */
   grid-template-areas: 
   "hd"
   "sd"
   "main"
   "ft";
-  border: 2px solid yellow;
+  /*border: 2px solid yellow;*/
 }
 
 .box{
@@ -21,7 +20,6 @@
     }
 
   .header{
-    /* row start/column start/ row end/ column end */
     background-color: #34568B;
     color: white;
     padding: 100px;
@@ -68,7 +66,7 @@
   }
 
 
-/* If Screen Is Wide Enough */
+/* If the screen is 900px the new layout shows */
 @media(min-width:900px) {
 .container{
       display:grid;
